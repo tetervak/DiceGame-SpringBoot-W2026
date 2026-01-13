@@ -5,6 +5,7 @@ import ca.tetervak.dicegame.service.CookieDataService;
 import ca.tetervak.dicegame.service.DiceRollerService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -17,9 +18,8 @@ import org.springframework.web.servlet.ModelAndView;
 import java.time.LocalDate;
 
 @Controller
+@Slf4j
 public class DiceGameController {
-
-    private final Logger log = LoggerFactory.getLogger(DiceGameController.class);
 
     private final DiceRollerService rollerService;
     private final CookieDataService cookieDataService;
