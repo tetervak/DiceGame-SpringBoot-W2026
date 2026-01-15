@@ -24,3 +24,8 @@ h2 {
     font-weight: bolder;
     color: #ff9800;
 }
+
+input[type="submit"] {
+    width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
